@@ -5,13 +5,13 @@ def parse_requirements(filename):
         return f.read().splitlines()
 
 setup(
-    name="optcontrol_w_JAX",   # Replace with your project name
-    version="0.1.0",            # Version number for your package
-    description="solving optimal control problems in overdamped systems",  # Short description
-    author="Samuel",         # Your name
-    author_email="your.email@example.com",  # Your email
-    #url="https://github.com/your_username/your_project",  # Project URL (optional)
-    packages=find_packages(),   # Automatically find and include all packages in your project
+    name="opt_con_ness",
+    version="1.0.0",
+    description="solving optimal control problems in overdamped systems",
+    author="Samuel Monter",
+    author_email="samuel.monter@uni-konstanz.de",
+    url="https://github.com/SaMoPhys/opt_con_ness",
+    packages=find_packages(),
     install_requires=parse_requirements('requirements.txt'),
-    python_requires='==3.12.7',    # Python version requirements (optional)
+    python_requires='==3.12.7',
 )
